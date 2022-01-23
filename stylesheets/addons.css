@@ -1,0 +1,18 @@
+.container-stacker {
+  display: grid;
+}
+
+.content-stacker {
+  grid-area: 1 / 1;
+}
+
+.content-stacker-title {
+  grid-area: 1 / 1;
+  margin-top: 1.5em;
+}
+
+.index-boulder_map-heart {
+  width: 30px;
+  margin-top: 2em;
+  margin-left: 2em;
+}
