@@ -16,3 +16,23 @@
   margin-top: 2em;
   margin-left: 2em;
 }
+
+.index-footer-heart {
+  width: 30px;
+}
+
+.index-footer-wrapper {
+  width: 200px;
+  height: 200px;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}
+
+.container-stacker-footer {
+  width: 200px;
+  height: 200px;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}

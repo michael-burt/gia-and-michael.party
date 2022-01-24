@@ -5653,6 +5653,33 @@ div.index-br-green-dots{
 .index-boulder_map-image{
     width:100%
 }
+
+
+.index-footer-mark{
+    position:absolute;
+    top:0%;
+    left:0%;
+    margin: 0px;
+    -webkit-transform:scale(0.5);
+    transform:scale(0.5)
+}
+@media only screen and (min-width: 770px){
+    .index-footer-mark{
+        top:0%;
+        left:0%;
+        margin: 0px;
+        -webkit-transform:none;
+        transform:none
+    }
+}
+.index-footer-image{
+    width:200px;
+    -webkit-animation:spin 9000ms linear infinite;
+    animation:spin 9000ms linear infinite
+}
+
+
+
 .index-boulder_map-mark{
     position:absolute;
     top:-8%;
