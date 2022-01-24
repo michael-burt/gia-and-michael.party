@@ -1,5 +1,10 @@
 
 
+function loadFacts() {
+    if (isMobile) {
+        $(".index-fact").on("click", toggleFact)
+    }
+}
 
 function loadFacts() {
     if (isMobile) {
@@ -9,6 +14,26 @@ function loadFacts() {
 
 function toggleFact() {
     this.classList.toggle("is-active")
+}
+
+function setYes() {
+    var e = $("#rsvp-response-yes"),
+        v = $("#rsvp-response-hidden");
+    e.on("click", function(event) {
+        console.log(v.val());
+        v.val("Joyfully Accepts");
+        console.log(v.val());
+    })
+}
+
+function setNo() {
+    var e = $("#rsvp-response-no"),
+        v = $("#rsvp-response-hidden");
+    e.on("click", function(event) {
+        console.log(v.val());
+        v.val("Regretfully Declines");
+        console.log(v.val());
+    })
 }
 
 function loadOptions() {
@@ -2355,7 +2380,7 @@ var isMobile = window.matchMedia("(max-width: 640px)").matches,
     };
 document.body.classList.contains("index") && (yall({
     threshold: 500
-}), loadFacts(), loadOptions(), setTimeout(function() {}, 1200)), document.body.classList.contains("index") && (setTimeout(function() {
+}), setYes(), setNo(), loadFacts(), loadOptions(), setTimeout(function() {}, 1200)), document.body.classList.contains("index") && (setTimeout(function() {
     indexAnimation()
 }, 1500), setTimeout(function() {
     loadNav()
