@@ -5522,6 +5522,12 @@ div.index-br-green-dots{
         padding-bottom:84vw
     }
 }
+.index-event-us__image{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
 .index-event__image{
     width:300px;
     height:300px;
